@@ -6,5 +6,10 @@ RSpec.describe StringCalculator do
       string_calculator = StringCalculator.new
       expect(string_calculator.add("")).to eq(0)
     end
+
+    it 'returns sum for non-empty string' do
+      string_calculator = StringCalculator.new
+      expect(string_calculator.add("2,3")).to eq(5)
+    end
   end
 end
